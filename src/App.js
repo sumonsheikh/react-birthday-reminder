@@ -1,12 +1,14 @@
 
-import React from 'react';
+import React ,{useState} from 'react';
 import List from './List';
+import data from './data';
 
 function App() {
+  const[people,setPeople] = useState(data);
   return (
     <main>
       <div className='container'>
-        <h3> 0 Birthday Today</h3>
+        <h3> {people.length} Birthday Today</h3>
         <List/>
         <button>Clear All</button>
       </div>
