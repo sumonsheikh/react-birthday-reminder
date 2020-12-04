@@ -7,9 +7,9 @@ const List = ({people}) => {
         <div>
         
          { people && people.length > 0 ? people.map((person) =>{
-             console.log(person.name);
+             
             return(
-                <article>
+                <article className='person'>
                     <img src={person.image} alt={person.name}/>
                     <div>
                         <h4>{person.name}</h4>
