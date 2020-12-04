@@ -9,8 +9,8 @@ function App() {
     <main>
       <div className='container'>
         <h3> {people.length} Birthday Today</h3>
-        <List/>
-        <button>Clear All</button>
+        <List people={people}/>
+        <button onClick={() => setPeople([])}>Clear All</button>
       </div>
     </main>
   );
