@@ -30,9 +30,33 @@ main{
   margin:5rem 0;
   border-radius: 10px;
   padding:1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+.person {
+  display:grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 .person img{
   width:75px;
   height: 75px;
   border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-right: 15px;
+
+}
+button {
+  background: #7952B3;
+  color: #fff;
+  width: 450px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:focus{
+  outline: none;
 }
